@@ -61,8 +61,8 @@ variable "ec2_user" {
 ### Modules ###
 
 module "aws_vpc" {
-  source  = "wesuuu/aws-vpc/basic"
-  version = "0.2.0"
+  source  = "wesuuu/basic-instance/aws"
+  version = "0.0.1"
 
   ssh_ip_range = var.ip_range
   project_tags = var.project_tags
